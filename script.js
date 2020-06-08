@@ -1,26 +1,26 @@
-var nounInput = document.getElementById("noun");
-var numberInput = document.getElementById("number");
-var placeInput = document.getElementById("place");
-var showStoryButton = document.getElementById("showStory");
-var storyParagraph = document.getElementById("story");
+let storyButton = document.getElementById(`storyButton`)
+let storyParagraph = document.getElementById(`storyParagraph`)
+let thing = document.getElementById(`thing`)
+let number = document.getElementById(`number`)
+let place = document.getElementById(`place`)
 
-showStoryButton.addEventListener("click", showStory);
+storyButton.addEventListener(`click`, showStory)
 
 function showStory() {
-    var noun = nounInput.value.trim();
-    var number = numberInput.value.trim();
-    var place = placeInput.value.trim();
+  let thingValue = thing.value.trim()
+  let numberValue = number.value.trim()
+  let placeValue = place.value.trim()
 
-    if (noun == "") {
-        storyParagraph.innerHTML = "Please type a noun.";
-    }
-    else if (number == "") {
-        storyParagraph.innerHTML = "Please type a number.";
-    }
-    else if (place == "") {
-        storyParagraph.innerHTML = "Please type a place.";
-    }
-    else {
-        storyParagraph.innerHTML = "A man bought a " + noun + " at the grocery store for " + number + " dollars and brought it to the " + place + ".";
-    }
+  if (thingValue == ``) {
+    storyParagraph.innerHTML = `Please type a thing.`
+  }
+  else if (numberValue == ``) {
+    storyParagraph.innerHTML = `Please type a number.`
+  }
+  else if (placeValue == ``) {
+    storyParagraph.innerHTML = `Please type a place.`
+  }
+  else {
+    storyParagraph.innerHTML = `A man bought a ${thingValue} at the grocery store for ${numberValue} dollars and brought it to the ${placeValue}.`
+  }
 }
