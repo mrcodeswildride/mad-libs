@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Mad Libs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
 
-<head>
-	<title>Mad Libs</title>
-	<meta name="viewport" content="width=device-width, initial-scale=0.5">
-	<link href="style.css" rel="stylesheet">
-	<script src="script.js" defer>
+  <body>
+    <h1>Mad Libs</h1>
 
-	</script>
-</head>
-
-<body>
-	<h1>Mad Libs</h1>
-
-	<input type="text" placeholder="thing" id="thing">
-  <input type="text" placeholder="number" id="number">
-  <input type="text" placeholder="place" id="place">
-  <button id="storyButton">Show story</button>
-  <p id="storyParagraph"></p>
-</body>
-
+    <input type="text" placeholder="thing" autocomplete="off" id="thing" />
+    <input type="text" placeholder="number" autocomplete="off" id="number" />
+    <input type="text" placeholder="place" autocomplete="off" id="place" />
+    <button id="storyButton">Show story</button>
+    <p id="storyParagraph"></p>
+  </body>
 </html>
